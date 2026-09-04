@@ -103,6 +103,12 @@ dialog::backdrop {
 .misc-btn h4 {
     color: var(--text-primary);
 }
+#save {
+    display: none;
+}
+#remove {
+    display: none;
+}
 @keyframes card-entry {
     from {
         opacity: 0;
@@ -528,6 +534,12 @@ h3 {
     .misc-btn {
         top: 25px
     }
+    #save {
+        display: block;
+    }
+    #remove {
+        display: block;
+    }
 }
 @media only screen and (min-width: 900px) {
     .content {
@@ -568,5 +580,11 @@ h3 {
     }
     .misc-btn {
         top: 25px
+    }
+    #save {
+        display: block;
+    }
+    #remove {
+        display: block;
     }
 }
