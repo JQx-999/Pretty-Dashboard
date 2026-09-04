@@ -249,9 +249,13 @@ h2 {
     overflow: scroll;
     display: block;
 }
+#stats::-webkit-scrollbar {
+  display: none;
+}
 #stats h2 {
     padding-bottom: 0;
 }
+
 #stats #scroll-text {
     padding: 0;
     font-weight: bold;
