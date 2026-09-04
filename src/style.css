@@ -534,12 +534,6 @@ h3 {
     .misc-btn {
         top: 25px
     }
-    #save {
-        display: block;
-    }
-    #remove {
-        display: block;
-    }
 }
 @media only screen and (min-width: 900px) {
     .content {
