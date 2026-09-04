@@ -211,6 +211,21 @@ if (window.innerWidth < 768) {
   grid.enableMove(false);
   grid.enableResize(false);
 }
+loadLayout();
+function saveLayout() {
+  const serializedData = grid.save();
+  localStorage.setItem('saved-grid-layout', JSON.stringify(serializedData));
+}
+function removeSavedLayout() {
+  localStorage.removeItem('saved-grid-layout');
+}
+function loadLayout() {
+  const savedData = localStorage.getItem('saved-grid-layout');
+  if (savedData) {
+    const layout = JSON.parse(savedData);
+    grid.load(layout);
+  }
+}
 const modal = document.getElementById('menu');
 const openBtn = document.getElementById('misc');
 const closeBtn = document.getElementById('closeMisc');
